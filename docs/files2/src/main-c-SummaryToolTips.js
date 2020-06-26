@@ -1,0 +1,1 @@
+NDSummary.OnToolTipsLoaded("File2:src/main.c",{11:"<div class=\"NDToolTip TFunction LC\"><div id=\"NDPrototype11\" class=\"NDPrototype NoParameterForm\"><span class=\"SHKeyword\">int</span> main()</div><div class=\"TTSummary\">Run the main routine of this program. The primary focuse in the project is to execute our hello_world function</div></div>"});

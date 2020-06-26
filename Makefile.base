@@ -1,0 +1,44 @@
+#####################################################
+# This is a generic make file. It can be used for    #
+# all of the projects contained here. If a project   #
+# needs something custome a partent make file should #
+# created.                                           #
+#                                                    #
+# This make file is executed within the context of a #
+# project directory not from the root of this repo.  #
+# The dockerfile copies it to the proper dir.        #
+# https://www.gnu.org/software/make/manual/make.html #
+#####################################################
+
+SHELL=/bin/bash
+APP_NAME=the-basics
+CC=gcc
+CFLAGS=-g -c -Wall -Iinclude
+LDFLAGS=#blank can be defined if needed
+BUILD_DIR=build
+SRC_DIR=src
+BIN_DIR=${BUILD_DIR}/bin
+OUTPUT=${BUILD_DIR}/${APP_NAME}
+HEADERS=$(wildcard include/*.h)
+SRC=$(wildcard src/*.c)
+OBJECTS=$(subst ${SRC_DIR},${BUILD_DIR},${SRC:%.c=%.o})
+
+all:${BIN_DIR}/${APP_NAME}
+
+.PHONY: test
+test:
+	@echo "Begin makefile tests ..."
+	@echo "Variable check - look at these"
+	@echo "HEADERS=${HEADERS}"
+	@echo "SRC=${SRC}"
+	@echo "OBJECTS=${OBJECTS}"
+
+build:
+	@mkdir -vp ${BIN_DIR} 
+
+${BIN_DIR}/${APP_NAME}:${OBJECTS}
+	${CC} ${OBJECTS} ${LDFLAGS} -o $@
+
+${OBJECTS}: ${SRC} | build
+	${CC} ${CFLAGS} $(subst ${BUILD_DIR},${SRC_DIR},${@:%.o=%.c}) -o $@
+
