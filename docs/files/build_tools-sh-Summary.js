@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("File:build_tools.sh","build_tools.sh");NDSummary.OnSummaryLoaded("File:build_tools.sh",[["Bash","Bash"]],[["Functions","Function"],["Groups","Group"],["Sections","Section"]],[[1,0,2,"Build Tools","Build_Tools"],[2,0,1,"Functions","Functions"],[3,0,0,"Build","Build"],[4,0,0,"Run","Run"],[5,0,0,"Docs","Docs"],[6,0,0,"List","List"]]);
