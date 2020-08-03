@@ -1,5 +1,5 @@
 # the-basic
-A quick refresher for basic computer science concepts
+A quick refresher for basic computer science concepts and an excuse to get better at documentation.
 
 This is not meant to be a guide however it may become useful refrence if I have done a good job.
 
@@ -25,3 +25,6 @@ The layout of this project is as follows.
     | Makefile.base - This is the base makefile that all projects can use |
 	|                                                                     |
 	|_____________________________________________________________________|
+
+Documentation for this project is generated using [Natural Docs](https://naturaldocs.org/) 
+and is published via [GitHub Pages](https://pages.github.com/) [here](https://superxkooda.github.io/the-basics)
