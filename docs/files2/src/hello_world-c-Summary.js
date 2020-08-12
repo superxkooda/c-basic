@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("File2:src/hello_world.c","hello_world.c");NDSummary.OnSummaryLoaded("File2:src/hello_world.c",[["C/C++","C"]],[["Functions","Function"],["Groups","Group"],["Sections","Section"]],[[7,0,2,"Hello World","Hello_World"],[8,0,1,"Functions","Functions"],[9,0,0,"hello_world","hello_world"]]);

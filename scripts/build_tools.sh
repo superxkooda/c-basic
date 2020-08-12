@@ -71,7 +71,7 @@ docs(){
     docker build -t ${tag} -f ${TB_DIR}/Dockerfile --target docs ${TB_DIR};
     docker run --rm  ${tag} | tar  -xvC ${TB_DIR};
 }
-doc
+
 # Function: List
 # List all available projects to build
 list() {

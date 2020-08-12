@@ -1,1 +1,1 @@
-NDMenu.OnSectionLoaded("files.js",[[2,"Hello World","File2:src/",[[1,"hello_world.c"],[1,"main.c"]]],[2,"Scripts","File:",[[1,"build_tools.sh"]]]]);
+NDMenu.OnSectionLoaded("files.js",[[2,"Hello World","File2:src/",[[1,"main.c"]]],[2,"Scripts","File:",[[1,"build_tools.sh"]]]]);
